@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import Navbar from '../navbar/navbar';
 
 const Layout = ({ title, keywords, description, children }) => {
     return (
@@ -9,6 +10,7 @@ const Layout = ({ title, keywords, description, children }) => {
                 <meta name='description' content={description}></meta>
                 <meta name='keywords' content={keywords}></meta>
             </Head>
+            <Navbar></Navbar>
             {children}
         </div>
     );

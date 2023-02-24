@@ -11,6 +11,9 @@ export default class MyDocument extends Document {
 					{/* PWA primary color */}
 					<link rel='shortcut icon' href='/favicon.ico' />
 					<meta name='emotion-insertion-point' content='' />
+					<link rel="preconnect" href="https://fonts.googleapis.com" />
+					<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+					<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Tilt+Prism&display=swap" rel="stylesheet" />
 					{this.props.emotionStyleTags}
 				</Head>
 				<body>

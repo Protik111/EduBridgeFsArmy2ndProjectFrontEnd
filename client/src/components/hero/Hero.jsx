@@ -4,7 +4,7 @@ import { ButtonComp } from '../ui/Button';
 
 const Hero = () => {
     return (
-        <Container sx={{ py: 10}}>
+        <Container sx={{ py: 15}}>
             <Grid container spacing={2}>
                 <Grid xs={12} md={6} sx={{ margin: 'auto' }}>
                     <Typography variant='h1'>

@@ -15,7 +15,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Container, Stack } from '@mui/material';
-import { FlexBeetwen } from '../styles/FlexBetween';
 import { ButtonComp } from '../ui/Button';
 
 const drawerWidth = 240;
@@ -55,7 +54,7 @@ const Navbar = (props) => {
 
     return (
         <Box>
-            <AppBar component="nav" sx={{ p: 1, position: "sticky", background: '#FFFFFF', boxShadow: '1px 635px 254px rgba(0, 0, 0, 0.01), 1px 357px 214px rgba(0, 0, 0, 0.05), 0px 159px 159px rgba(0, 0, 0, 0.09), 0px 40px 87px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }}>
+            <AppBar position="fixed" sx={{ p: 1, background: '#FFFFFF', boxShadow: '1px 635px 254px rgba(0, 0, 0, 0.01), 1px 357px 214px rgba(0, 0, 0, 0.05), 0px 159px 159px rgba(0, 0, 0, 0.09), 0px 40px 87px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }}>
                 <Container>
                     <Toolbar>
                         <IconButton

@@ -17,3 +17,10 @@ export const FlexAlignCenter = styled(Box) ({
     justifyContent: 'center',
     alignItems: 'center'
 });
+
+export const FlexAlignCenterDC = styled(Box) ({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column'
+});

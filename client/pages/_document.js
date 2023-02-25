@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
 					<meta name='emotion-insertion-point' content='' />
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
 					<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-					<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Tilt+Prism&display=swap" rel="stylesheet" />
+					<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Tilt+Prism&display=swap" rel="stylesheet" />
 					{this.props.emotionStyleTags}
 				</Head>
 				<body>

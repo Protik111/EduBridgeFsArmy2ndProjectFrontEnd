@@ -30,6 +30,14 @@ export default function MyApp(props) {
 				fontSize: '40px',
 				lineHeight: '49px'
 			},
+			h4: {
+				fontFamily: [
+					'Heebo', 'sans-serif'
+				].join(','),
+				fontWeight: 500,
+				fontSize: '18px',
+				lineHeight: '21px'
+			},
 			subtitle1: {
 				fontFamily: [
 					'Heebo', 'sans-serif'
@@ -53,6 +61,11 @@ export default function MyApp(props) {
 				fontWeight: 400,
 				fontSize: '16px',
 				lineHeight: '24px'
+			}
+		},
+		palette: {
+			background: {
+				default: "#FFFFFF"
 			}
 		}
 	})

@@ -16,9 +16,32 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Container, Stack } from '@mui/material';
 import { ButtonComp } from '../ui/Button';
+import Link from 'next/Link';
 
 const drawerWidth = 240;
-const navItems = ['Peer Education', 'Group Discussion', 'Community', 'Contact'];
+// const navItems = ['Peer Education', 'Group Discussion', 'Community', 'Contact'];
+const navItems = [
+    {
+        id: 1,
+        title: 'Peer Education',
+        slug: 'peer-education'
+    },
+    {
+        id: 1,
+        title: 'Group Discussion',
+        slug: 'group-discussion'
+    },
+    {
+        id: 1,
+        title: 'Community',
+        slug: 'community'
+    },
+    {
+        id: 1,
+        title: 'Contact',
+        slug: 'Contact'
+    },
+];
 
 const Navbar = (props) => {
 
@@ -31,7 +54,7 @@ const Navbar = (props) => {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            
+
             <Box sx={{ flexGrow: 1, color: '#413434', display: { xs: 'none', sm: 'block' } }}>
 
                 <img src="logo.svg" slt="logo"></img>
@@ -40,9 +63,9 @@ const Navbar = (props) => {
             <Divider />
             <List>
                 {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
+                    <ListItem key={item?.id} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText primary={item} />
+                            <ListItemText primary={item?.title} />
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -68,14 +91,18 @@ const Navbar = (props) => {
                         </IconButton>
                         <Box sx={{ flexGrow: 1, color: '#413434', display: { xs: 'none', sm: 'block' } }}>
 
-                            <img src="logo.svg" slt="logo"></img>
+                            <Link href='/'>
+                                <img src="logo.svg" slt="logo"></img>
+                            </Link>
                         </Box>
 
                         <Box direction="row" sx={{ display: { xs: 'none', sm: 'block' } }}>
                             {navItems.map((item) => (
-                                <Typography variant='body1' key={item} sx={{ mx: 2, color: '#413434', display: 'inline-block', cursor: 'pointer' }}>
-                                    {item}
-                                </Typography>
+                                <Link href={`${item?.slug}`}>
+                                    <Typography variant='body1' key={item?.id} sx={{ mx: 2, color: '#413434', display: 'inline-block', cursor: 'pointer' }}>
+                                        {item?.title}
+                                    </Typography>
+                                </Link>
                             ))}
                             <ButtonComp myWidth='110px'>Sign In</ButtonComp>
                         </Box>

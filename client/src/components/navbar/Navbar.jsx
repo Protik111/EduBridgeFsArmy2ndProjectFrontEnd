@@ -17,6 +17,7 @@ import Button from '@mui/material/Button';
 import { Container, Stack } from '@mui/material';
 import { ButtonComp } from '../ui/Button';
 import Link from 'next/Link';
+import { useRouter } from 'next/router';
 
 const drawerWidth = 240;
 // const navItems = ['Peer Education', 'Group Discussion', 'Community', 'Contact'];
@@ -44,9 +45,12 @@ const navItems = [
 ];
 
 const Navbar = (props) => {
-
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+
+    const router = useRouter();
+
+    console.log('router', router);
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);

@@ -22,7 +22,7 @@ import { ButtonComp } from '../ui/Button';
 const GroupList = () => {
 
     return (
-        <Card sx={{ py: 2, maxWidth: 345, border: '0.3px solid #2FB97B', boxShadow: '0px 0px 0px rgba(0, 0, 0, 0.1)' }}>
+        <Card sx={{ py: 2, maxWidth: 345, border: '0.8px solid rgba(0, 0, 0, 0.12)', boxShadow: '0px 0px 0px rgba(0, 0, 0, 0.1)' }}>
             <CardHeader
                 action={
                     <IconButton aria-label="settings">

@@ -6,7 +6,7 @@ import { ButtonComp } from '../ui/Button';
 const Member = ({ member }) => {
     return (
         <Box sx={{ py: 3, px: 2, border: '0.3px solid rgba(1, 1, 1, 0.4)', borderRadius: '10px', background: '#FFFFFF' }}>
-            <Stack direction="row" spacing={2}>
+            <Stack direction="row" alignItems='center' spacing={2}>
                 <Avatar
                     alt="Remy Sharp"
                     src="/member.png"
@@ -17,7 +17,7 @@ const Member = ({ member }) => {
                     <Typography variant='subtitle2'>Education</Typography>
                 </Box>
             </Stack>
-            <Box>
+            <Box sx={{ mt: 1 }}>
                 <Typography variant='subtitle2'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that</Typography>
             </Box>
             <FlexBeetwen sx={{ pt: 3 }}>

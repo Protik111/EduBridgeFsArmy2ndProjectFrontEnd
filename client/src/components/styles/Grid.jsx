@@ -19,3 +19,11 @@ export const GridTemplateColumnGroup = styled(Box) ({
     padding: '50px 0',
     placeContent: 'center',
 });
+
+export const GridTemplateColumnMember = styled(Box) ({
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gap: '20px',
+    padding: '50px 0',
+    placeContent: 'center',
+});

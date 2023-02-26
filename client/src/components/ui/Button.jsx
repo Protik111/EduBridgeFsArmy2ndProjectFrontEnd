@@ -10,6 +10,7 @@ export const ButtonComp = styled('button')((props) => ({
     fontFamily: 'Heebo',
     fontWeight: '500',
     fontSize: '20px',
-    lineHeight: '29px'
+    lineHeight: '29px',
+    cursor: 'pointer'
 
 }));

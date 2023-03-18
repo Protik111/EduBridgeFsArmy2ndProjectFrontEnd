@@ -50,8 +50,6 @@ const Navbar = (props) => {
 
     const router = useRouter();
 
-    console.log('router', router);
-
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
